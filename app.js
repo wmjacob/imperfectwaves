@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 
 app.use(compression());
 app.use(express.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, 'dist')));
+app.use(express.static(path.join(__dirname, 'build')));
 // app.use('/robots.txt', express.static('./robots.txt'));
 // app.use('/sitemap.xml', express.
 // static('./sitemap.xml'));
@@ -34,7 +34,7 @@ app.get('/', (req, res) => {
   });
 });
 
-app.use(express.static('./dist'));
+app.use(express.static('./build'));
 
 /**
  * Get port from environment and store in Express.
