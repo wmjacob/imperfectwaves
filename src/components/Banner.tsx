@@ -9,7 +9,7 @@ export const Banner = () => (
         display: { xs: 'block', sm: 'none' },
       }}
     >
-      <img style={{ height: 'auto', width: '100vw' }} src='/small-banner.jpg'></img>
+      <img style={{ height: 'auto', width: '100vw' }} src='/small-banner.png'></img>
     </Box>
     <Box
       sx={{
