@@ -1,14 +1,14 @@
 steps:
 # Build the container image
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/dannymusic/imperfect-waves:$COMMIT_SHA', '.']
+  args: ['build', '-t', 'gcr.io/dannymusic/imperfectwaves:$COMMIT_SHA', '.']
 # Push the container image to Container Registry
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/dannymusic/imperfect-waves:$COMMIT_SHA']
+  args: ['push', 'gcr.io/dannymusic/imperfectwaves:$COMMIT_SHA']
 # Deploy container image to Cloud Run
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
-  args: ['run', 'deploy', 'imperfect-waves', '--image', 'gcr.io/dannymusic/imperfect-waves:$COMMIT_SHA', '--region', 'us-central1', '--concurrency', '80', '--max-instances', '5', '--memory', '256Mi', '--service-account', 'builder@dannymusic.iam.gserviceaccount.com', '--timeout', '30']
+  args: ['run', 'deploy', 'imperfectwaves', '--image', 'gcr.io/imperfectwaves/dannymusic:$COMMIT_SHA', '--region', 'us-central1', '--concurrency', '80', '--max-instances', '5', '--memory', '256Mi', '--service-account', 'builder@dannymusic.iam.gserviceaccount.com', '--timeout', '30']
 images:
-- gcr.io/dannymusic/imperfect-waves:$COMMIT_SHA
-logsBucket: 'gs://imperfect-waves-build-logs'
+- gcr.io/imperfectwaves/dannymusic:$COMMIT_SHA
+logsBucket: 'gs://dannymusic-build-logs'
