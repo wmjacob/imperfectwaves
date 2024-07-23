@@ -1,13 +1,13 @@
 import { List, ListItem, Typography, Box, Button, Paper } from '@mui/material';
 
 const tourDates = [
-  { date: new Date(2025, 9, 20).toDateString(), venue: 'Nights in Necropolis @ Propaganda', location: 'Lake Worth Beach, FL', ticketLink: 'https://www.facebook.com/events/1379553266005061' },
-  { date: new Date(2025, 9, 21).toDateString(), venue: 'New World Tampa', location: 'Tampa, FL', ticketLink: 'https://www.facebook.com/events/844471377139864/' },
-  { date: new Date(2025, 9, 24).toDateString(), venue: 'Poetry Lounge', location: 'Pittsburg, PA', ticketLink: 'https://www.facebook.com/events/718000933752979/' },
-  { date: new Date(2025, 9, 26).toDateString(), venue: 'Sanctorium @ The Fire', location: 'Philadelphia, PA', ticketLink: 'https://www.facebook.com/events/2059928964423121/' },
-  { date: new Date(2025, 9, 27).toDateString(), venue: 'Fete Music Hall', location: 'Providence, RI', ticketLink: 'https://www.facebook.com/events/772072594730283' },
-  { date: new Date(2025, 9, 28).toDateString(), venue: 'JB Lovedrafts Micropub', location: 'Harrisburg, PA', ticketLink: 'https://www.facebook.com/events/1471339517106205/' },
-  { date: new Date(2025, 9, 29).toDateString(), venue: 'Fallout RVA', location: 'Richmond, VA', ticketLink: 'https://www.facebook.com/events/495780896203271/' },
+  { date: new Date(2024, 8, 20).toDateString(), venue: 'Nights in Necropolis @ Propaganda', location: 'Lake Worth Beach, FL', ticketLink: 'https://www.facebook.com/events/1379553266005061' },
+  { date: new Date(2024, 8, 21).toDateString(), venue: 'New World Tampa', location: 'Tampa, FL', ticketLink: 'https://www.facebook.com/events/844471377139864/' },
+  { date: new Date(2024, 8, 24).toDateString(), venue: 'Poetry Lounge', location: 'Pittsburg, PA', ticketLink: 'https://www.facebook.com/events/718000933752979/' },
+  { date: new Date(2024, 8, 26).toDateString(), venue: 'Sanctorium @ The Fire', location: 'Philadelphia, PA', ticketLink: 'https://www.facebook.com/events/2059928964423121/' },
+  { date: new Date(2024, 8, 27).toDateString(), venue: 'Fete Music Hall', location: 'Providence, RI', ticketLink: 'https://www.facebook.com/events/772072594730283' },
+  { date: new Date(2024, 8, 28).toDateString(), venue: 'JB Lovedrafts Micropub', location: 'Harrisburg, PA', ticketLink: 'https://www.facebook.com/events/1471339517106205/' },
+  { date: new Date(2024, 8, 29).toDateString(), venue: 'Fallout RVA', location: 'Richmond, VA', ticketLink: 'https://www.facebook.com/events/495780896203271/' },
   // Add more dates here
 ];
 
