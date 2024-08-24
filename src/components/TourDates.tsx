@@ -8,6 +8,7 @@ const tourDates = [
   { date: new Date(2024, 8, 27).toDateString(), venue: 'Fete Music Hall', location: 'Providence, RI', ticketLink: 'https://www.facebook.com/events/772072594730283' },
   { date: new Date(2024, 8, 28).toDateString(), venue: 'JB Lovedrafts Micropub', location: 'Harrisburg, PA', ticketLink: 'https://www.facebook.com/events/1471339517106205/' },
   { date: new Date(2024, 8, 29).toDateString(), venue: 'Fallout RVA', location: 'Richmond, VA', ticketLink: 'https://www.facebook.com/events/495780896203271/' },
+  { date: new Date(2024, 9, 23).toDateString(), venue: 'Ziggy\'s', location: 'Ypsilanti, MI', ticketLink: 'https://www.facebook.com/events/763085412515027' },
   // Add more dates here
 ];
 
