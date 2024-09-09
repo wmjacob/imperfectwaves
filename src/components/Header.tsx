@@ -120,6 +120,12 @@ export const Header = () => {
               </MenuItem>
               <MenuItem
                 component="a"
+                href="https://imperfectwaves.bandcamp.com/album/imperfect-waves-tour-2024-remix-ep"
+              >
+                <Typography textAlign="center">Buy tour remix LP</Typography>
+              </MenuItem>
+              <MenuItem
+                component="a"
                 href="/imperfect-waves-tour.pdf"
               >
                 <Typography textAlign="center">Tour Info</Typography>
@@ -130,12 +136,14 @@ export const Header = () => {
               >
                 <Typography textAlign="center">Link Tree</Typography>
               </MenuItem>
+
           </Menu>
 
         </Box>
         <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
           <Button sx={{ mr: 2 }} variant="outlined" component="a" href="https://linktr.ee/imperfectwaves" target="_blank">Link Tree</Button>
           <Button sx={{ mr: 2 }} variant="outlined" component="a" href="/imperfect-waves-tour.pdf" target="_blank">Tour Info</Button>
+          <Button sx={{ mr: 2 }} variant="outlined" component="a" href="https://imperfectwaves.bandcamp.com/album/imperfect-waves-tour-2024-remix-ep" target="_blank">Buy tour remix LP</Button>
           <Button variant="outlined" onClick={handleScrollToDates}>See tour dates</Button>
         </Box>
         </Toolbar>
